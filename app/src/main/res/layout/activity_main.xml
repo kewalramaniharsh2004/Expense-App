@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="30sp"
+            android:paddingEnd="16dp"
+            android:weightSum="5">
+
+            <!-- Title TextView -->
+
+            <!-- Logout ImageButton -->
+
+            <ImageButton
+                android:id="@+id/backlogButton"
+                android:layout_width="70dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:src="@drawable/logout_icon" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Expense Manager"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_weight="3"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/arrowButton"
+                android:layout_width="71dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/arrow_icon" />
+
+        </LinearLayout>
+
+        <!-- Rest of your layout -->
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/totalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:orientation="horizontal"
+        android:layout_marginTop="90sp"
+        tools:ignore="NotSibling">
+
+        <!-- Total Income Section -->
+        <LinearLayout
+            android:id="@+id/incomeContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginEnd="8dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/incomeAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 0"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Total Expense Section -->
+        <LinearLayout
+            android:id="@+id/expenseContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/expenseAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 0"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/addIncomeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Income"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/addExpenseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Expense"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/historyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLayout"
+        android:layout_below="@id/totalContainer"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- LinearLayout for Transaction History Items -->
+        <LinearLayout
+            android:id="@+id/historyLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Sample Transaction History Item -->
+            <!-- Your existing transaction history items here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "787224339365",
+    "project_id": "expense-manager-f3824",
+    "storage_bucket": "expense-manager-f3824.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787224339365:android:b0922aed8a4d15b351be4c",
+        "android_client_info": {
+          "package_name": "com.example.expenseincome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr9TvZc5Jx8nLjnDx2pKeCVPw8l5C8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787224339365:android:d3f2ad10a641934b51be4c",
+        "android_client_info": {
+          "package_name": "com.example.expensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr9TvZc5Jx8nLjnDx2pKeCVPw8l5C8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787224339365:android:1ca67583cc44354551be4c",
+        "android_client_info": {
+          "package_name": "com.example.incomeexpense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr9TvZc5Jx8nLjnDx2pKeCVPw8l5C8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787224339365:android:3cdd16b9d0663c7e51be4c",
+        "android_client_info": {
+          "package_name": "com.example.try1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr9TvZc5Jx8nLjnDx2pKeCVPw8l5C8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787224339365:android:6a8c223baa93d1a851be4c",
+        "android_client_info": {
+          "package_name": "com.example.try2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgr9TvZc5Jx8nLjnDx2pKeCVPw8l5C8kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

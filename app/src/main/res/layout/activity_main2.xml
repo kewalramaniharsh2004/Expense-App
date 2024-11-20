@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="53dp"
+        android:text="Expense Manager"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/totalIncomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Total Income: Rs 0"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/totalExpenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Total Expense: Rs 0"
+        android:layout_below="@id/totalIncomeTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <com.example.try2.PieChartView
+        android:id="@+id/pieChart"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_below="@id/totalExpenseTextView"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
